@@ -167,6 +167,104 @@ Here are some example usage scenarios:
    let langNames = tfj.getLangNames();
    ```
 
+## Creating a JSON Language Data File
+
+The TFJ library relies on a JSON language data file to provide translations for your web application. Below, we'll outline how to structure this JSON file and provide an example.
+
+### JSON File Structure
+
+The JSON language data file should have an array of language objects, with each object representing a specific language. Here's the basic structure of each language object:
+
+```json
+{
+  "lang": "Language Name",
+  "code": "Language Code",
+  "country": "Country Name",
+  "default": true|false,
+  "data": {
+    "key1": {
+      "content": "Translation",
+      "selector": "Element Selector",
+      "type": "Text Type"
+    },
+    "key2": {
+      "content": "Translation",
+      "selector": "Element Selector",
+      "type": "Text Type"
+    },
+    ...
+  }
+}
+```
+
+- `"lang"`: The name of the language (e.g., "English", "French").
+- `"code"`: The language code (e.g., "en", "fr").
+- `"country"`: The name of the country associated with the language (optional).
+- `"default"`: Indicates whether this is the default language (`true` or `false`).
+- `"data"`: An object containing translations for various elements.
+
+Each `"data"` object should contain translations for specific HTML elements in your web application. Here's what each property within the `"data"` object represents:
+
+- `"key"`: A unique identifier for the translation.
+- `"content"`: The translated content.
+- `"selector"`: The CSS selector for the HTML element to be translated.
+- `"type"`: The type of HTML element (`"text"`, `"select"`, etc.).
+
+### Example JSON Language Data File
+
+Here's an example JSON language data file with two languages (English and French):
+
+```json
+[
+  {
+    "lang": "English",
+    "code": "en",
+    "country": "US",
+    "default": true,
+    "data": {
+      "title": {
+        "content": "Hello World",
+        "selector": "h1",
+        "type": "text"
+      },
+      "description": {
+        "content": "This is a description",
+        "selector": "p",
+        "type": "text"
+      },
+      "test": {
+        "content": ["Test 1", "Test 2"],
+        "selector": "#test",
+        "type": "select"
+      }
+    }
+  },
+  {
+    "lang": "French",
+    "code": "fr",
+    "country": "France",
+    "data": {
+      "title": {
+        "content": "Bonjour le monde",
+        "selector": "h1",
+        "type": "text"
+      },
+      "description": {
+        "content": "Ceci est une description",
+        "selector": "p",
+        "type": "text"
+      },
+      "test": {
+        "content": ["Vue 1", "Vue 2"],
+        "selector": "#test",
+        "type": "select"
+      }
+    }
+  }
+]
+```
+
+
 ## License
 
 This library is open-source and available under the [MIT License](LICENSE).
