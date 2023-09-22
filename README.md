@@ -39,12 +39,7 @@ You can include TFJ directly from a CDN like jsDelivr:
 
 ```html
 <!-- Latest version -->
-<script src="https://cdn.jsdelivr.net/gh/babymonie/TFJJS@latest/TFJ.js"></script>
-
-
-<!-- Specific version (replace x.y.z with the desired version) -->
-<script src="https://cdn.jsdelivr.net/gh/babymonie/TFJJS@1.0.0/TFJ.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/gh/babymonie/TFJJS@latest/dist/tfj.js"></script>
 ```
 
 ### Usage
