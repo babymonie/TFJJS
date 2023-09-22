@@ -32,10 +32,12 @@ TFJ is a JavaScript library for dynamic content loading and localization. It all
 
 ### Installation
 
-To use TFJ in your project, you need to include the `lib.js` script in your HTML file:
+To use TFJ in your project, you need to include the `TFJ.js` or `TFJ.min.js` script in your HTML file:
+
+you should use the minified version for production.
 
 ```html
-<script src="lib.js"></script>
+<script src="TFJ.js"></script>
 ```
 
 ### Usage
