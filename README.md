@@ -1,5 +1,3 @@
-
-
 # TFJ (Translation Framework for JavaScript)
 
 TFJ is a JavaScript library for dynamic content loading and localization. It allows you to easily change the content of HTML elements based on the selected language, making your web application multilingual.
@@ -25,13 +23,27 @@ TFJ is a JavaScript library for dynamic content loading and localization. It all
     - [getLangName(lang)](#getlangname)
     - [getLangNames()](#getlangnames)
 - [Examples](#examples)
+- [Creating a JSON Language Data File](#creating-a-json-language-data-file)
+- [Using a CDN via jsDelivr](#using-a-cdn-via-jsdelivr)
 - [License](#license)
 
 ## Getting Started
 
 ### Installation
 
-To use TFJ in your project, you need to include the `TFJ.js` or `TFJ.min.js` script in your HTML file:
+To use TFJ in your project, you need to include the `TFJ.js` or `TFJ.min.js` script in your HTML file. For production use, it's recommended to use the minified version.
+
+#### Using a CDN via jsDelivr
+
+You can include TFJ directly from a CDN like jsDelivr:
+
+```html
+<!-- Latest version -->
+<script src="https://cdn.jsdelivr.net/npm/tfj"></script>
+
+<!-- Specific version (replace x.y.z with the desired version) -->
+<script src="https://cdn.jsdelivr.net/npm/tfj@x.y.z"></script>
+
 
 you should use the minified version for production.
 
