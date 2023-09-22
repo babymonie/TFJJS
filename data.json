@@ -1,0 +1,47 @@
+[
+  {
+    "lang": "English",
+    "code": "en",
+    "country": "US",
+    "default": true,
+    "data": {
+      "title": {
+        "content": "Hello World",
+        "selector": "h1",
+        "type": "text"
+      },
+      "description": {
+        "content": "This is a description",
+        "selector": "p",
+        "type": "text"
+      },
+      "test": {
+        "content": ["Test 1", "Test 2"],
+        "selector": "#test",
+        "type": "select"
+      }
+    }
+  },
+  {
+    "lang": "French",
+    "code": "fr",
+    "country": "France",
+    "data": {
+      "title": {
+        "content": "Bonjour le monde",
+        "selector": "h1",
+        "type": "text"
+      },
+      "description": {
+        "content": "Ceci est une description",
+        "selector": "p",
+        "type": "text"
+      },
+      "test": {
+        "content": ["Vue 1", "Vue 2"],
+        "selector": "#test",
+        "type": "select"
+      }
+    }
+  }
+]

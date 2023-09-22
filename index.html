@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+</head>
+
+<body>
+    <h1 id="title">Test Page</h1>
+    <p id="description">This is a test page.</p>
+
+    <select id="select">
+        <option value="fr">French </option>
+        <option value="en" selected>English</option>
+    </select>
+
+    <select id="test">
+        <option value="test">Test </option>
+        <option value="test2" selected>Test2</option>
+    </select>
+
+    <script src="lib.js"></script>
+
+    <script>
+        let test = new TFJ();
+        test.init('data.json', true);
+
+        document.getElementById('select').addEventListener('change', function (e) {
+            test.setLang(e.target.value);
+        });
+
+    </script>
+
+</body>
+
+</html>
