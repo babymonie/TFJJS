@@ -1,5 +1,4 @@
 
----
 
 # TFJ (Translation Framework for JavaScript)
 
@@ -269,6 +268,3 @@ Here's an example JSON language data file with two languages (English and French
 
 This library is open-source and available under the [MIT License](LICENSE).
 
----
-
-Feel free to customize and expand this documentation according to your specific needs.
