@@ -38,8 +38,10 @@ To use TFJ in your project, you need to include the `TFJ.js` or `TFJ.min.js` scr
 You can include TFJ directly from a CDN like jsDelivr:
 
 ```html
-<!-- Latest version -->
+<!-- Latest version(Unminified) -->
 <script src="https://cdn.jsdelivr.net/gh/babymonie/TFJJS@latest/dist/tfj.js"></script>
+<!-- Latest version(Minified) -->
+<script src="https://cdn.jsdelivr.net/gh/babymonie/TFJJS@latest/dist/tfj.min.js"></script>
 ```
 
 ### Usage
